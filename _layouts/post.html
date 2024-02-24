@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{site.language}}">
+  {% include head.html %}
+  <body>
+	<div id="main">
+  	{% include logo.html %}
+  	{% include nav.html %}
+		<div id="content-left">
+      <div id="post">
+        <h2>{{ page.title }}</h2>
+        <span class="date">posted on {{ page.date | date: "%-d %b %Y" }} by <a class="{{ page.author }}" href="{{site.url}}{{site.baseurl}}/authors/{{page.author}}/">{{ page.tag }}</a></span>
+        {{ content }}
+        {% if page.categories.size > 0 %}
+          <div id="categories">
+            <p><b>Project:</b>&nbsp;
+              {% for category in page.categories %}
+                <a href="{{site.url}}{{site.baseurl}}/projects/{{category}}/">#{{category}}</a>&nbsp;
+              {% endfor %}
+            </p>
+          </div>
+        {% endif %}
+  		</div>
+    </div>
+		{% include footer.html %}
+	</div>
+    </body>
+</html>

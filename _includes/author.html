@@ -1,0 +1,8 @@
+{% for post in author_posts %}
+<div id="post-short">
+    <a href="{{site.url}}{{site.baseurl}}{{post.url}}">
+      <h3>{{post.title}}</h3>
+    </a>
+    <span class="date">posted on {{ post.date | date: "%-d %b %Y" }} by <a class="{{ post.author }}" href="{{site.url}}{{site.baseurl}}/authors/{{post.author}}/">{{ post.tag }}</a></span>
+  </div>
+  {% endfor %}  

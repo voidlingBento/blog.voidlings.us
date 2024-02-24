@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+	margin-top: 0px;
+	padding: 0;
+	font-family: 'Special Elite', 'Courier New', Courier, monospace;
+	font-size: 100%;
+	line-height: 150%;
+	text-shadow: #000 0px 0px 5px;
+	background: url("../images/top.png") left top repeat-x, url("../images/bottom.png") left bottom repeat-x,  url("../images/bg.png");
+	color: #e7e3d6;
+	min-height: 97vh;
+}
+
+hr {
+	filter: drop-shadow(#000 2px 2px 5px);
+}
+
+a:link, a:visited	{
+	text-decoration: underline;
+	color:#e7e3d6;
+}
+
+a:hover	{
+	text-decoration: underline;
+}
+
+#main {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#nav {
+	text-align: center;
+	margin: auto;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+}
+
+#social-nav {
+	font-size: 125%;
+	text-align: center;
+	margin: auto;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 3px double #e7e3d6;
+}
+
+#social-nav a:link, #social-nav a:visited, #social-nav a:hover	{
+	text-decoration: none;
+}
+
+#content-left {
+	text-align: left;
+	margin: auto;
+	padding-top: 5px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+#content {
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+#footer {
+	text-align: center;
+	margin: auto;
+	font-size: 0.8em;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-top: 3px double #e7e3d6;
+}
+
+#logo	{
+	text-align: center;
+	margin: 20px auto 20px auto;
+	filter: drop-shadow(#000 0px 0px 5px);
+}
+
+#logo img {
+	max-width: 65%;
+}
+
+#content-left a:link, #content-left a:visited	{
+	text-decoration: underline;
+	color:#e7e3d6
+}
+
+#content-left a:hover	{
+	text-decoration: underline;
+}
+
+#post-short a:link, #post-short a:visited	{
+	text-decoration: underline;
+	color:#e7e3d6
+}
+
+#post-short a:hover	{
+	text-decoration: underline;
+}
+
+#post-short h3, #post h2	{
+	margin-bottom: 0px;
+}
+
+#post-short .date	{
+	font-family: 'Special Elite', 'Courier New', Courier, monospace;
+	font-size: 0.8em;
+	font-weight: bold;
+ }
+
+#post .date	{
+	font-family: 'Special Elite', 'Courier New', Courier, monospace;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+#post img, #post-short img {
+	max-width: 95%;
+}
+
+#categories a, #categories a:link, #categories a:visited {
+	background-color: #41333d;
+	text-decoration: underline;
+	padding: 0.1em 0.5em 0.1em 0.5em;
+	border-radius: 25px;
+}
+
+#categories a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 850px) {
+	#main {
+		width: auto;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	#logo, #nav, #content-left,	#footer {
+		display: block;
+		width: 100%;
+	}
+
+	#logo img {
+		max-width: 80%;
+	}
+
+	#nav {
+		font-size: 2em;
+		padding-bottom: 0.5em;
+	}
+
+	h2 {
+		font-size: 3em;
+	}
+
+	h3 {
+		font-size: 2em;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+	#main {
+		width: auto;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	#logo, #nav, #content-left,	#footer {
+		display: block;
+		width: 100%;
+	}
+
+	#logo img {
+		max-width: 80%;
+	}
+
+	#nav {
+		font-size: 1.1em;
+		padding-bottom: 0.5em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+}
+
+.align-center,
+div.align-center,
+a img.align-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  filter: drop-shadow(#000 0px 0px 5px);
+  text-align: center;
+}
+
+.align-right,
+a img.align-right {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  float: right;
+  filter: drop-shadow(#000 0px 0px 5px)
+}
+
+.align-left,
+a img.align-left {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  float: left;
+  filter: drop-shadow(#000 0px 0px 5px)
+}
+
+.rabbit, span.rabbit, a:link.rabbit, a:visited.rabbit
+{
+	color: #f888a8 !important;
+}
+
+.cat, span.cat, a:link.cat, a:visited.cat
+{
+	color: #007ba7 !important;
+}
+
+.muse, a.muse, a:link.muse, a:visited.muse
+{
+	color: #e8c972 !important;
+}
+
+.glow
+{
+	color: #41333d;
+	text-shadow: #41333d 0px 0px 5px;
+
+}
+
+.invert
+{
+	color: #180614;
+	text-shadow: #e7e3d6 0px 0px 5px;
+}
