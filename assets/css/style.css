@@ -124,7 +124,7 @@ a:hover	{
 	font-weight: bold;
 }
 
-#post img, #post-short img {
+#content-left img {
 	max-width: 95%;
 }
 
